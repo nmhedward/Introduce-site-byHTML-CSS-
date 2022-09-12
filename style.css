@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: var(--background-color);
     width: 100vw;
     font-family: var(--font);
 }
@@ -23,7 +23,7 @@ body {
 }
 
 .home-header-desktop {
-    display: block;
+    display: none;
 }
 
 .home-header-mobile {
@@ -104,6 +104,7 @@ h1 {
     flex-direction: column;
     gap: 10px;
     cursor: pointer;
+    margin-bottom: 150px;
 }
 
 .mouse {
@@ -141,4 +142,119 @@ h1 {
         transform: translateY(5px);
         opacity: 0;
     }
+}
+
+.about {
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--color);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.about img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    border-radius: 100%;
+    background-color: #FF4C60;
+    margin: auto;
+}
+
+.about-container {
+    width: 90%;
+    background-color: #302f4e !important;
+    border: 1px solid #302f4e;
+    border-radius: 20px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.about-container button {
+    width: 170px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #FF4C60;
+    color: #fff;
+    font-family: var(--font);
+    font-weight: 700;
+    border: 2px solid #FF4C60;
+}
+
+.chart-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-lower {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-lower-row1,
+.about-lower-row2,
+.about-lower-row3,
+.about-lower-row4 {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.h3-p {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-lower i {
+    width: 37px;
+    height: 37px;
+    font-size: 33px;
+}
+
+.services {
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.services-card1,
+.services-card2,
+.services-card3 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.services-card1 {
+    background-color: rgb(108, 108, 229);
+}
+
+.services-card2 {
+    background-color: rgb(249, 215, 76);
+}
+
+.services-card3 {
+    background-color: rgb(249, 123, 139);
 }
