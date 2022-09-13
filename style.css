@@ -297,3 +297,126 @@ h3 {
 .ex-content p{
     font-size: 16px;
 }
+
+.recent-work{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: var(--color);
+    margin-bottom: 120px;
+}
+
+.recent-work select{
+    width: 90%;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.rw-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 30px;
+}
+
+.rw-container1 img,
+.rw-container2 img,
+.rw-container3 img,
+.rw-container4 img,
+.rw-container5 img,
+.rw-container6 img{
+    width: 80%;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.rw-container1,
+.rw-container2,
+.rw-container3,
+.rw-container4,
+.rw-container5,
+.rw-container6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover1,
+.hover2,
+.hover3,
+.hover4,
+.hover5,
+.hover6{
+    display: none;
+}
+
+.recent-work button{
+    color: #FFF;
+    background: #FF4C60;
+    padding: 12px 32px;
+    border-radius: 20px;
+    border: 1px solid #FF4C60;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pricing-plan{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color);
+    gap: 30px;
+}
+
+.pricing-plan-box1,
+.pricing-plan-box2,
+.pricing-plan-box3{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #302f4e !important;
+    border: 1px solid #302f4e ;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 24px;
+    text-align: center;
+}
+
+.pricing-plan-box1 button,
+.pricing-plan-box2 button,
+.pricing-plan-box3 button{
+    color: #FFF;
+    background: #FF4C60;
+    padding: 12px 32px;
+    border-radius: 20px;
+    border: 1px solid #FF4C60;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.price{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.price-month{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.section-title{
+text-align: center;
+}
