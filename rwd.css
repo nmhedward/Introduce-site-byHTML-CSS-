@@ -1,0 +1,102 @@
+@media screen and (min-width: 768px) {
+    .about img {
+        flex: 25;
+    }
+
+    .about-container {
+        flex: 75
+    }
+
+    .about-lower {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .about-lower-row1,
+    .about-lower-row2,
+    .about-lower-row3,
+    .about-lower-row4 {
+        gap: 10px;
+    }
+
+    .service-container {
+        flex-direction: row;
+        margin: 0 20px;
+    }
+
+    .ex-container {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    #work {
+        display: none;
+    }
+
+    .work-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 30px;
+        color: var(--color);
+        cursor: pointer;
+    }
+
+    .rw-container-row1,
+    .rw-container-row2 {
+        display: flex;
+        gap: 30px;
+    }
+
+    .pricing-plan-container {
+        flex-direction: row;
+    }
+
+    .logo-box {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .logo-box1,
+    .logo-box2 {
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .post-box-container {
+        flex-direction: row;
+    }
+
+    .get-in-touch {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reponsive-contact {
+        display: flex;
+    }
+
+    .contact-h3-p {
+        flex: 30;
+    }
+
+    .form {
+        flex: 60;
+        margin-top: none;
+    }
+
+    .name-email {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #input-name {
+        flex: 50;
+    }
+
+    #input-email {
+        flex: 50;
+    }
+
+}
