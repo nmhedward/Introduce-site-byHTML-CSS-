@@ -684,7 +684,7 @@ h1 {
     cursor: pointer;
 }
 
-.body-container {
+.body-container-content {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -715,4 +715,12 @@ h1 {
 
 .contact-h3-p {
     margin-bottom: 120px;
+}
+
+.services > p > a{
+    color: #FF4C60;
+}
+
+.contact-h3-p > p > a{
+    color: #FF4C60;
 }
