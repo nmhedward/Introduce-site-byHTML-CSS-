@@ -30,12 +30,8 @@
         gap: 30px;
     }
 
-    #work {
-        display: none;
-    }
-
     .work-bar {
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: flex-start;
         gap: 30px;
@@ -166,6 +162,14 @@
     .vertical-menu a{
         color: white;
         text-decoration: none;
+    }
+
+    .select-work{
+        display: none;
+    }
+
+    .work-bar{
+        display: flex;
     }
 
 }
