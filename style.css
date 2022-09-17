@@ -271,7 +271,7 @@ h1 {
 
 .services-card1:hover,
 .services-card2:hover,
-.services-card3:hover{
+.services-card3:hover {
     transform: translateY(-10px);
 }
 
@@ -304,7 +304,7 @@ h1 {
     position: relative;
 }
 
-.ex-content span::before{
+.ex-content span::before {
     content: '';
     background-image: url(./assets/graduation-cap-svgrepo-com.svg);
     background-repeat: no-repeat;
@@ -318,7 +318,7 @@ h1 {
     left: -30px;
 }
 
-.ex-content span::after{
+.ex-content span::after {
     content: '';
     width: 2px;
     height: 80px;
@@ -347,7 +347,7 @@ h1 {
 }
 
 .recent-work select {
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     font-size: 16px;
     padding: 5px;
@@ -357,8 +357,14 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px;
+    width: 100%;
+}
+
+.rw-container-row1,
+.rw-container-row2 {
+    width: 90%;
 }
 
 .rw-container1,
@@ -366,7 +372,7 @@ h1 {
 .rw-container3,
 .rw-container4,
 .rw-container5,
-.rw-container6{
+.rw-container6 {
     position: relative;
 }
 
@@ -481,7 +487,7 @@ h1 {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     font-weight: 700;
-    width: 40%;
+    width: 50%;
     margin: auto;
     cursor: pointer;
 }
@@ -723,7 +729,7 @@ h1 {
     font-size: 16px;
     font-weight: 700;
     align-items: flex-start;
-    width: 40%;
+    width: 71%;
     cursor: pointer;
 }
 
@@ -760,24 +766,24 @@ h1 {
     margin-bottom: 120px;
 }
 
-.services > p > a{
+.services>p>a {
     color: #FF4C60;
 }
 
-.contact-h3-p > p > a{
+.contact-h3-p>p>a {
     color: #FF4C60;
 }
 
 .post-box1:hover,
 .post-box2:hover,
-.post-box3:hover{
+.post-box3:hover {
     transform: translateY(-10px);
 }
 
-.post-box__img:hover{
+.post-box__img:hover {
     overflow: hidden;
 }
 
-.post-box__img img:hover{
+.post-box__img img:hover {
     transform: scale(1.2)
 }

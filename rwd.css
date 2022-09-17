@@ -28,6 +28,8 @@
         display: flex;
         flex-direction: row;
         gap: 30px;
+        width: 90%;
+        margin: auto;
     }
 
     .work-bar {
@@ -47,6 +49,8 @@
 
     .pricing-plan-container {
         flex-direction: row;
+        width: 90%;
+        gap: 5px;
     }
 
     .logo-box {
@@ -57,16 +61,22 @@
     .logo-box1,
     .logo-box2 {
         flex-direction: row;
-        gap: 100px;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        ;
     }
 
     .post-box-container {
         flex-direction: row;
+        width: 90%;
     }
 
     .get-in-touch {
         display: flex;
         flex-direction: column;
+        width: 90%;
+        margin: auto;
     }
 
     .reponsive-contact {
@@ -159,17 +169,18 @@
         margin-top: 300px;
     }
 
-    .vertical-menu a{
+    .vertical-menu a {
         color: white;
         text-decoration: none;
     }
 
-    .select-work{
+    .select-work {
         display: none;
     }
 
-    .work-bar{
+    .work-bar {
         display: flex;
+        justify-self: flex-start;
     }
 
 }
