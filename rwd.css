@@ -1,22 +1,21 @@
 @media screen and (min-width: 768px) {
-    .about img {
-        flex: 25;
+    .about-row img {
+        max-width: 20%;
+
     }
 
     .about-container {
-        flex: 75
+        max-width: 70%;
+    }
+
+    .about-row {
+        flex-direction: row;
+        margin: 0 15px;
     }
 
     .about-lower {
         flex-direction: row;
         gap: 20px;
-    }
-
-    .about-lower-row1,
-    .about-lower-row2,
-    .about-lower-row3,
-    .about-lower-row4 {
-        gap: 10px;
     }
 
     .service-container {
@@ -41,10 +40,14 @@
         cursor: pointer;
     }
 
-    .rw-container-row1,
-    .rw-container-row2 {
+    .rw-content {
         display: flex;
-        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .rw-card {
+        width: 30%;
+        margin: auto;
     }
 
     .pricing-plan-container {
@@ -54,17 +57,11 @@
     }
 
     .logo-box {
-        flex-direction: column;
-        gap: 50px;
+        flex-wrap: wrap;
     }
 
-    .logo-box1,
-    .logo-box2 {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0;
-        ;
+    .logo-box img {
+        width: 25%;
     }
 
     .post-box-container {

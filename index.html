@@ -94,41 +94,48 @@
             <!-- About -->
             <div class="about" id="about">
                 <h2 class="section-title">About Me</h2>
-                <img src="./assets/hacker.png" alt="hacker">
-                <!-- About-Container -->
-                <div class="about-container">
-                    <p>I am Bolby Doe, web developer from London, United Kingdom. I have rich experience in web site
-                        design
-                        and
-                        building and customization, also I am good at WordPress.</p>
-                    <div class="downloadCV-btn">
-                        <button>Download CV</button>
-                    </div>
-                    <div class="chart-info">
-                        <label>Development</label>
-                        <p>85%</p>
-                    </div>
-                    <div class="progress1">
-                        <progress id="file1" value="85" max="100"> 85% </progress>
-                    </div>
-                    <div class="chart-info">
-                        <label>UI/UX design</label>
-                        <p>95%</p>
-                    </div>
-                    <div class="progress2">
-                        <progress id="file2" value="95" max="100"> 95% </progress>
-                    </div>
-                    <div class="chart-info">
-                        <label>Photography</label>
-                        <p>70%</p>
-                    </div>
-                    <div class="progress3">
-                        <progress id="file3" value="70" max="100"> 70% </progress>
+                <div class="about-row">
+                    <img src="./assets/hacker.png" alt="hacker">
+                    <!-- About-Container -->
+                    <div class="about-container">
+                        <div class="about-container__p-btn">
+                            <p>I am Bolby Doe, web developer from London, United Kingdom. I have rich experience in web
+                                site
+                                design
+                                and
+                                building and customization, also I am good at WordPress.</p>
+                            <div class="downloadCV-btn">
+                                <button>Download CV</button>
+                            </div>
+                        </div>
+                        <div class="chart">
+                            <div class="chart-info">
+                                <label>Development</label>
+                                <p>85%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="percent" style="width:85% ;background-color:rgb(255, 209, 92)"></div>
+                            </div>
+                            <div class="chart-info">
+                                <label>UI/UX design</label>
+                                <p>95%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="percent" style="width:95% ;background-color:rgb(255, 76, 96)"></div>
+                            </div>
+                            <div class="chart-info">
+                                <label>Photography</label>
+                                <p>70%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="percent" style="width:70% ;background-color:rgb(108, 108, 229)"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- About Lower -->
                 <div class="about-lower">
-                    <div class="about-lower-row1">
+                    <div class="about-lower-container">
                         <span>
                             <i class="fa fa-check" aria-hidden="true"></i>
                         </span>
@@ -137,7 +144,7 @@
                             <p style="font-size: 16px">Project completed</p>
                         </div>
                     </div>
-                    <div class="about-lower-row2">
+                    <div class="about-lower-container">
                         <span>
                             <i class="fa fa-coffee" aria-hidden="true">
                             </i>
@@ -147,7 +154,7 @@
                             <p style="font-size: 16px">Cup of coffee</p>
                         </div>
                     </div>
-                    <div class="about-lower-row3">
+                    <div class="about-lower-container">
                         <span>
                             <i class="fa fa-users" aria-hidden="true">
                             </i>
@@ -157,7 +164,7 @@
                             <p style="font-size: 16px">Satisfied clients</p>
                         </div>
                     </div>
-                    <div class="about-lower-row4">
+                    <div class="about-lower-container">
                         <span>
                             <i class="fa fa-trophy" aria-hidden="true">
                             </i>
@@ -173,17 +180,17 @@
             <div class="services" id="services">
                 <h2 class="section-title">Services</h2>
                 <div class="service-container">
-                    <div class="services-card1">
+                    <div class="services-card" style="background-color:rgb(108, 108, 229)">
                         <img src="./assets/service-1.svg" alt="c1">
                         <h3>UI/UX design</h3>
                         <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
                     </div>
-                    <div class="services-card2">
+                    <div class="services-card" style="background-color:rgb(249, 215, 76)">
                         <img src="./assets/service-2.svg" alt="c2">
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
                     </div>
-                    <div class="services-card3">
+                    <div class="services-card" style="background-color:rgb(249, 123, 139)">
                         <img src="./assets/service-3.svg" alt="c3">
                         <h3>Photography</h3>
                         <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
@@ -196,7 +203,7 @@
             <div class="experience" id="experience">
                 <h2 class="section-title">Experience</h2>
                 <div class="ex-container">
-                    <div class="ex-1">
+                    <div class="ex">
                         <div class="ex-content">
                             <span class="time">2019 - Present</span>
                             <h4>Academic Degree
@@ -216,7 +223,7 @@
                             <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
                         </div>
                     </div>
-                    <div class="ex-2">
+                    <div class="ex">
                         <div class="ex-content">
                             <span class="time">2019 - Present
                             </span>
@@ -245,6 +252,7 @@
             <div class="recent-work" id="work">
                 <h2 class="section-title">Recent Works</h2>
                 <div class="rw-container">
+                    <!-- Select Work -->
                     <select name="work" class="select-work">
                         <option value="everything">Everything</option>
                         <option value="crative">Creative</option>
@@ -252,6 +260,7 @@
                         <option value="desgin">Desgin</option>
                         <option value="branding">Branding</option>
                     </select>
+                    <!-- Work Bar -->
                     <div class="work-bar">
                         <span>Everything</span>
                         <span>Creative</span>
@@ -259,10 +268,10 @@
                         <span>Design</span>
                         <span>Branding</span>
                     </div>
-                    <div class="rw-container-row1">
-                        <div class="rw-container1">
+                    <div class="rw-content">
+                        <div class="rw-card">
                             <img src="./assets/1.svg" alt="1">
-                            <div class="rw-hover1">
+                            <div class="rw-hover">
                                 <label>Art</label>
                                 <h4>Project Managment Illustration</h4>
                                 <span><i class="fa fa-search-plus" aria-hidden="true"></i>
@@ -270,9 +279,9 @@
                                 <div class="mask"></div>
                             </div>
                         </div>
-                        <div class="rw-container2">
+                        <div class="rw-card">
                             <img src="./assets/2.svg" alt="2">
-                            <div class="rw-hover2">
+                            <div class="rw-hover">
                                 <label>Creative</label>
                                 <h4>Guest App Walkthrough Screens</h4>
                                 <span><i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -280,9 +289,9 @@
                                 <div class="mask"></div>
                             </div>
                         </div>
-                        <div class="rw-container3">
+                        <div class="rw-card">
                             <img src="./assets/3.svg" alt="3">
-                            <div class="rw-hover3">
+                            <div class="rw-hover">
                                 <label>Branding</label>
                                 <h4>Delivery App Wireframe</h4>
                                 <span><i class="fa fa-video-camera" aria-hidden="true"></i>
@@ -290,11 +299,9 @@
                                 <div class="mask"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="rw-container-row2">
-                        <div class="rw-container4">
+                        <div class="rw-card">
                             <img src="./assets/4.svg" alt="4">
-                            <div class="rw-hover4">
+                            <div class="rw-hover">
                                 <label>Creative</label>
                                 <h4>Onboarding Motivation</h4>
                                 <span><i class="fa fa-music" aria-hidden="true"></i>
@@ -302,9 +309,9 @@
                                 <div class="mask"></div>
                             </div>
                         </div>
-                        <div class="rw-container5">
+                        <div class="rw-card">
                             <img src="./assets/5.svg" alt="5">
-                            <div class="rw-hover5">
+                            <div class="rw-hover">
                                 <label>Art,Branding</label>
                                 <h4>iMac Mockup Design</h4>
                                 <span><i class="fa fa-picture-o" aria-hidden="true"></i>
@@ -312,9 +319,9 @@
                                 <div class="mask"></div>
                             </div>
                         </div>
-                        <div class="rw-container6">
+                        <div class="rw-card">
                             <img src="./assets/6.svg" alt="6">
-                            <div class="rw-hover6">
+                            <div class="rw-hover">
                                 <label>Creative,Design</label>
                                 <h4>Game Store App Concept</h4>
                                 <span><i class="fa fa-link" aria-hidden="true"></i>
@@ -330,7 +337,7 @@
             <div class="pricing-plan">
                 <h2 class="section-title">Pricing Plan</h2>
                 <div class="pricing-plan-container">
-                    <div class="pricing-plan-box1">
+                    <div class="pricing-plan-box">
                         <img src="./assets/price-1.svg" alt="">
                         <h3>Basic</h3>
                         <p>A Simple option but powerful to manage your business</p>
@@ -341,7 +348,7 @@
                         <button>Get Started
                         </button>
                     </div>
-                    <div class="pricing-plan-box2">
+                    <div class="pricing-plan-box pricing-plan-box2">
                         <img src="./assets/price-2.svg" alt="">
                         <h3>Premium</h3>
                         <p>Unlimited product including apps integrations and more features</p>
@@ -355,7 +362,7 @@
                             <label>Recommended</label>
                         </div>
                     </div>
-                    <div class="pricing-plan-box3">
+                    <div class="pricing-plan-box">
                         <img src="./assets/price-3.svg" alt="">
                         <h3>Ultimate</h3>
                         <p>A wise option for large companies and individuals</p>
@@ -385,18 +392,14 @@
                         </div>
                     </div>
                     <div class="logo-box">
-                        <div class="logo-box1">
-                            <img src="./assets/client-1-light.svg" alt="">
-                            <img src="./assets/client-2-light.svg" alt="">
-                            <img src="./assets/client-3-light.svg" alt="">
-                            <img src="./assets/client-4-light.svg" alt="">
-                        </div>
-                        <div class="logo-box2">
-                            <img src="./assets/client-5-light.svg" alt="">
-                            <img src="./assets/client-6-light.svg" alt="">
-                            <img src="./assets/client-7-light.svg" alt="">
-                            <img src="./assets/client-8-light.svg" alt="">
-                        </div>
+                        <img src="./assets/client-1-light.svg" alt="">
+                        <img src="./assets/client-2-light.svg" alt="">
+                        <img src="./assets/client-3-light.svg" alt="">
+                        <img src="./assets/client-4-light.svg" alt="">
+                        <img src="./assets/client-5-light.svg" alt="">
+                        <img src="./assets/client-6-light.svg" alt="">
+                        <img src="./assets/client-7-light.svg" alt="">
+                        <img src="./assets/client-8-light.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -404,31 +407,31 @@
             <div class="latest-post" id="blog">
                 <h2 class="section-title">Latest Posts</h2>
                 <div class="post-box-container">
-                    <div class="post-box1">
+                    <div class="post-box">
                         <div class="post-box__img">
                             <img src="./assets/post1.svg" alt="">
                         </div>
-                        <div class="detail1">
+                        <div class="detail">
                             <h3 style="font-size:20px;">5 Best App Development Tool for Your Project</h3>
                             <span class="post-detail">13 September,2022 . Edward</span>
                         </div>
                         <label class="label-absolute">Reviews</label>
                     </div>
-                    <div class="post-box2">
+                    <div class="post-box">
                         <div class="post-box__img">
                             <img src="./assets/post2.svg" alt="">
                         </div>
-                        <div class="detail2">
+                        <div class="detail">
                             <h3 style="font-size:20px;">Common Misconceptions About Payment</h3>
                             <span class="post-detail">13 September,2022 . Edward</span>
                         </div>
                         <label class="label-absolute">Tutorial</label>
                     </div>
-                    <div class="post-box3">
+                    <div class="post-box">
                         <div class="post-box__img">
                             <img src="./assets/post3.svg" alt="">
                         </div>
-                        <div class="detail3">
+                        <div class="detail">
                             <h3 style="font-size:20px;">3 Things To Know About Startup Business</h3>
                             <span class="post-detail">13 September,2022 . Edward</span>
                         </div>
